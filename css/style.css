@@ -695,6 +695,17 @@ input[type=checkbox]{
     }
   }
 
+  .footer {
+    background-color: #33384e;
+    color: #FFF;
+    padding: 1rem;
+  }
+
+  .footer a {
+    color: #FFF;
+    text-decoration: underline;
+  }
+
   /* STYLES FOR SMALL-SIZED SCREENS */
 
   @media (max-width: 576px) {
