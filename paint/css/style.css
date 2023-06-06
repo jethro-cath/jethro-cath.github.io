@@ -23,7 +23,7 @@ main {
 /* SIDE PANNEL STYLES */
 
 .side-pannel {
-    width: 15rem;
+    /* width: 10rem; */
     /* min-width: 15rem; */
 
     padding-top: 0.5rem;
@@ -63,6 +63,8 @@ main {
 }
 
 .side-pannel__tab {
+    width: 10rem;
+
     padding: 2rem;
 
     display: none;
@@ -159,11 +161,11 @@ main {
 
     margin-top: 1.5rem;
 
-    /* width: 50%; */
+    width: 4rem;
 }
 
 .canvas__value {
-    /* width: 4.5rem; */
+    width: 4.5rem;
     /* height: 4.5rem; */
 
     display: flex;
@@ -356,11 +358,13 @@ main {
     }
 
     .side-pannel__tab {
+        width: 3rem;
         padding: 0.5rem;
-        transition: 0.5s ease;
+        transition: 0.7s ease;
     }
 
     .side-pannel__tab_shown {
+        width: 10rem;
         padding: 1rem;
     }
 
@@ -370,6 +374,7 @@ main {
 
     .mobiles_minimized {
         display: none;
+        transition: 0.7s ease-in;
     }
 
     .canvas__presets {
