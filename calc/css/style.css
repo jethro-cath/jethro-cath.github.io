@@ -1,0 +1,88 @@
+body {
+    color: #1C2826;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.calc {
+    display: inline-block;
+
+    background-color: #D7F2BA;
+    
+    border-radius: 8px;
+
+    padding: 1.5rem;
+}
+
+.calc-window {
+    background-color: white;
+
+    height: 2rem;
+
+    border: 1px #9CC69B solid;
+    border-radius: 4px;
+
+    padding: 0.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.keyboard {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.numbers-keyboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.numbers-keyboard__button {
+    height: 3rem;
+    width: 3rem;
+
+    border: 0;
+    border-radius: 4px;
+
+    background-color: #BDE4A8;
+    box-shadow: 2px 2px 2px #9CC69B;
+
+    color: #1C2826;
+    font-size: 24px;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.operators__small-button {
+    height: 3rem;
+    width: 3rem;
+
+    border: 0;
+    border-radius: 4px;
+
+    background-color: #BDE4A8;
+    box-shadow: 2px 2px 2px #9CC69B;
+
+    color: #1C2826;
+    font-size: 24px;
+}
+
+.operators__result {
+    grid-column: span 2;
+    grid-row: span 2;
+
+    border: 0;
+    border-radius: 4px;
+
+    background-color: #79B4A9;
+    box-shadow: 2px 2px 2px #609e92;
+
+    color: #1C2826;
+    font-size: 2rem;
+}
