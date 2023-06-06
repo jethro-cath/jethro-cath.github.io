@@ -23,7 +23,7 @@ main {
 /* SIDE PANNEL STYLES */
 
 .side-pannel {
-    /* width: 10rem; */
+    width: 10rem;
     /* min-width: 15rem; */
 
     padding-top: 0.5rem;
@@ -63,7 +63,7 @@ main {
 }
 
 .side-pannel__tab {
-    width: 10rem;
+    /* width: 10rem; */
 
     padding: 2rem;
 
@@ -358,13 +358,13 @@ main {
     }
 
     .side-pannel__tab {
-        width: 3rem;
+        /* width: 3rem; */
         padding: 0.5rem;
         transition: 0.7s ease;
     }
 
     .side-pannel__tab_shown {
-        width: 10rem;
+        /* width: 10rem; */
         padding: 1rem;
     }
 
