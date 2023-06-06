@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/progress-bar.js"></script>
+
+        <title>Courses Dashboard</title>
+        <meta name="description" content="Blah-blah-blah">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row m-auto">
+                <div class="side-container side-container col-xl-2 col-lg-3 col-sm-auto">
+                    <aside class="side-bar">
+                        <div class="side-bar__logo-container">
+                            <a href="#" class="side-bar__logo"><img src="img/logo-full.svg" alt="Courses Logo"></a>
+                            <a href="#" class="side-bar__logo-small"><img src="img/logo-small.svg" alt="Courses Logo"></a>
+                        </div>
+                        <ul class="aside-navigation list-unstyled">
+                            <li class="aside-navigation__item">  
+                                <a href="#" class="aside-navigation__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.99311 9.07013C2.36096 9.63906 2 10.4496 2 11.3V18.9639C2 20.6208 3.34315 21.9639 5 21.9639H19C20.6569 21.9639 22 20.6208 22 18.9639V11.3C22 10.4496 21.639 9.63906 21.0069 9.07013L14.0069 2.77013C12.866 1.74331 11.134 1.74331 9.9931 2.77013L2.99311 9.07013ZM11 12.9639C9.89543 12.9639 9 13.8594 9 14.9639V18.9639C9 19.5162 9.44772 19.9639 10 19.9639H14C14.5523 19.9639 15 19.5162 15 18.9639V14.9639C15 13.8594 14.1046 12.9639 13 12.9639H11Z" fill="#9DA6BA"/>
+                                    </svg>  
+                                    <div class="aside-navigation__link-text">Dashboard</div>
+                                </a>
+                            </li>
+                            <li class="aside-navigation__item aside-navigation__item_active">                                    
+                                <a href="#" class="aside-navigation__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 4C3.34315 4 2 5.34315 2 7V17C2 18.6569 3.34315 20 5 20H8.02633C8.67123 20 9.3119 20.104 9.9237 20.3079L11.6838 20.8946C11.889 20.963 12.111 20.963 12.3162 20.8946L14.0763 20.3079C14.6881 20.104 15.3288 20 15.9737 20H19C20.6569 20 22 18.6569 22 17V7C22 5.34315 20.6569 4 19 4H15C13.9072 4 12.9167 4.43825 12.1948 5.14858C12.0876 5.25406 11.9124 5.25406 11.8052 5.14858C11.0833 4.43825 10.0928 4 9 4H5ZM13 18.5585L13.4438 18.4105C14.2596 18.1386 15.1138 18 15.9737 18H19C19.5523 18 20 17.5523 20 17V7C20 6.44772 19.5523 6 19 6H15C13.8954 6 13 6.89543 13 8V18.5585Z" fill="white"/>
+                                    </svg>
+                                    <div class="aside-navigation__link-text">Courses</div>
+                                </a>
+                            </li>
+                            <li class="aside-navigation__item">   
+                                <a href="#" class="aside-navigation__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 2C4.34315 2 3 3.34315 3 5V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V7.74264C21 6.94699 20.6839 6.18393 20.1213 5.62132L17.3787 2.87868C16.8161 2.31607 16.053 2 15.2574 2H6ZM15 4.2071V6C15 7.10457 15.8954 8 17 8H18.7929C19.2383 8 19.4614 7.46143 19.1464 7.14644L15.8536 3.85355C15.5386 3.53857 15 3.76165 15 4.2071ZM7 11C7 10.4477 7.44772 10 8 10H16C16.5523 10 17 10.4477 17 11C17 11.5523 16.5523 12 16 12H8C7.44772 12 7 11.5523 7 11ZM8 14C7.44772 14 7 14.4477 7 15C7 15.5523 7.44772 16 8 16H12C12.5523 16 13 15.5523 13 15C13 14.4477 12.5523 14 12 14H8Z" fill="#9DA6BA"/>
+                                    </svg>
+                                    <div class="aside-navigation__link-text">Classes</div>
+                                </a>
+                            </li>
+                            <li class="aside-navigation__item">                                    
+                                <a href="#" class="aside-navigation__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 18V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V18C21 15.2386 18.7614 13 16 13H8C5.23858 13 3 15.2386 3 18Z" fill="#9DA6BA"/>
+                                        <circle cx="12" cy="6.5" r="4.5" fill="#9DA6BA"/>
+                                    </svg>
+                                    <div class="aside-navigation__link-text">Students</div>
+                                </a>
+                            </li>
+                            <li class="aside-navigation__item">                                    
+                                <a href="#" class="aside-navigation__link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V16C22 17.6569 20.6569 19 19 19H8.36205C8.12811 19 7.90158 19.082 7.72187 19.2318L5.28037 21.2664C3.97771 22.3519 2 21.4256 2 19.7299V6ZM7 9C7 8.44772 7.44772 8 8 8H16C16.5523 8 17 8.44772 17 9C17 9.55228 16.5523 10 16 10H8C7.44772 10 7 9.55228 7 9ZM8 12C7.44772 12 7 12.4477 7 13C7 13.5523 7.44772 14 8 14H12C12.5523 14 13 13.5523 13 13C13 12.4477 12.5523 12 12 12H8Z" fill="#9DA6BA"/>
+                                    </svg>
+                                    <div class="aside-navigation__link-text">Messages</div>
+                                </a>
+                            </li>            
+                        </ul>
+                    </aside>
+                    <div class="side-bar__shadow top-bar__burger-menu"></div>
+                </div>
+                <div class="col-xl-10 col-lg-9 col-sm content-block">
+                    <div class="top-bar row">
+                        <a href="#" class="top-bar__logo-small col-auto"><img src="img/logo-small.svg" alt="Courses Logo"></a>
+                        <div class="top-bar__heading-container col col-sm-2">
+                            <h1 class="top-bar__heading">Courses</h1>
+                        </div>
+                        <div class="top-bar__search-container col-sm-6">
+                            <form class="top-bar__search">
+                                <input type="text" name="search" placeholder="Search..." class="top-bar__placeholder">
+                            </form>
+                        </div>
+                        <div class="top-bar__profile-stuff profile-stuff col-2 ms-auto">
+                            <a href="#" class="profile-stuff__bell profile-stuff__bell_active">
+                                <div class="bell-alert"></div>
+                                <img src="img/bell.svg" alt="Notes" class="profile-stuff__icon"></a>
+                            <a href="#" class="profile-stuff__cart"><img src="img/cart.svg" alt="Cart" class="profile-stuff__icon"></a>
+                            <a href="#" class="profile-stuff__avatar"><img src="img/man1.jpg" alt="Profile Avatar" class="profile-stuff__photo">
+                            <a class="top-bar__burger-menu" data-sidebar=".side-bar"><img src="img/burger.svg" alt="Menu"></a></a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col">
+                                <div class="all-courses section">
+                                <h2 class="all-courses__heading">All Courses</h2>
+                                <a href="#" class="all-courses__link">View all &gt;</a>
+                                <table class="all-courses__table courses-table table table-borderless align-middle">
+                                    <thead class="courses-table__head">
+                                        <tr>
+                                            <th>Cheatsheet name</th>
+                                            <th>Start</th>
+                                            <th>Rate</th>
+                                            <th>Level</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="courses-table__body">
+                                        <tr>
+                                            <th>
+                                                <img src="img/course1.jpg" alt="Course Avatar" class="courses-table__avatar">
+                                                <div class="courses-table__about-block">
+                                                    <div class="courses-table__course-name">Basics of Mobile UX</div>
+                                                    <div class="courses-table__course-length">5 Lessons</div>
+                                                </div>
+                                            </th>
+                                            <td>Feb 24</td>
+                                            <td>4.5</td>
+                                            <td>Intermediate</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="img/course2.jpg" alt="Course Avatar" class="courses-table__avatar">
+                                                <div class="courses-table__about-block">
+                                                    <div class="courses-table__course-name">UX/UI Design</div>
+                                                    <div class="courses-table__course-length">15 Lessons</div>
+                                                </div>
+                                            </th>
+                                            <td>Mar 23</td>
+                                            <td>4.7</td>
+                                            <td>Elementary</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="img/course3.jpg" alt="Course Avatar" class="courses-table__avatar">
+                                                <div class="courses-table__about-block">
+                                                    <div class="courses-table__course-name">Digital Illustration</div>
+                                                    <div class="courses-table__course-length">13 Lessons</div>
+                                                </div>
+                                            </th>
+                                            <td>Apr 1</td>
+                                            <td>4.8</td>
+                                            <td>Intermediate</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <img src="img/course4.jpg" alt="Course Avatar" class="courses-table__avatar">
+                                                <div class="courses-table__about-block">
+                                                    <div class="courses-table__course-name">Digital Design Systems</div>
+                                                    <div class="courses-table__course-length">10 Lessons</div>
+                                                </div>
+                                            </th>
+                                            <td>Apr 5</td>
+                                            <td>4.9</td>
+                                            <td>Elementary</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+
+                                <div class="tutors section">
+                                    <div class="tutors__heading-block">
+                                        <h2 class="tutors__heading">Top Tutors</h2>
+                                        <a href="#" class="tutors__menu"><img src="img/meatballs.svg" alt="Tutors menu"></a>
+                                    </div>
+                                    <ul class="tutors__list list-unstyled">
+                                        <li class="tutors__list-item tutor-card">
+                                            <img src="img/man1.jpg" alt="Tutor avatar" class="tutor-card__avatar">
+                                            <div class="tutor-card__text-block">
+                                                <div class="tutor-card__name">Melanie Grutt</div>
+                                                <div class="tutor-card__tag">@melgrutt</div>
+                                            </div>
+                                            <div class="tutor-card__add"><img src="img/plus.svg" alt="Add button"></div>                    
+                                        </li>
+                                        <li class="tutors__list-item tutor-card">
+                                            <img src="img/man2.jpg" alt="Tutor avatar" class="tutor-card__avatar">
+                                            <div class="tutor-card__text-block">
+                                                <div class="tutor-card__name">Keira Danlop</div>
+                                                <div class="tutor-card__tag">@danlop.edu</div>
+                                            </div>
+                                            <div class="tutor-card__add"><img src="img/plus.svg" alt="Add button"></div>                    
+                                        </li>
+                                        <li class="tutors__list-item tutor-card">
+                                            <img src="img/man1.jpg" alt="Tutor avatar" class="tutor-card__avatar">
+                                            <div class="tutor-card__text-block">
+                                                <div class="tutor-card__name">Melanie Grutt</div>
+                                                <div class="tutor-card__tag">@melgrutt</div>
+                                            </div>
+                                            <div class="tutor-card__add"><img src="img/plus.svg" alt="Add button"></div>                    
+                                        </li>
+                                        <li class="tutors__list-item tutor-card">
+                                            <img src="img/man2.jpg" alt="Tutor avatar" class="tutor-card__avatar">
+                                            <div class="tutor-card__text-block">
+                                                <div class="tutor-card__name">Keira Danlop</div>
+                                                <div class="tutor-card__tag">@danlop.edu</div>
+                                            </div>
+                                            <div class="tutor-card__add"><img src="img/plus.svg" alt="Add button"></div>                    
+                                        </li>
+                                        <li class="tutors__list-item tutor-card">
+                                            <img src="img/man1.jpg" alt="Tutor avatar" class="tutor-card__avatar">
+                                            <div class="tutor-card__text-block">
+                                                <div class="tutor-card__name">Melanie Grutt</div>
+                                                <div class="tutor-card__tag">@melgrutt</div>
+                                            </div>
+                                            <div class="tutor-card__add"><img src="img/plus.svg" alt="Add button"></div>                    
+                                        </li>
+                                        <li class="tutors__list-item tutor-card">
+                                            <img src="img/man2.jpg" alt="Tutor avatar" class="tutor-card__avatar">
+                                            <div class="tutor-card__text-block">
+                                                <div class="tutor-card__name">Keira Danlop</div>
+                                                <div class="tutor-card__tag">@danlop.edu</div>
+                                            </div>
+                                            <div class="tutor-card__add"><img src="img/plus.svg" alt="Add button"></div>                    
+                                        </li>
+                                    </ul>
+                                    </div>
+                            </div>
+
+                            <div class="col-xxl-4 col-md-5">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="hw-progress section">
+                                            <h2 class="hw-progress__heading">Homework progress</h2>
+                                            <ul class="hw-progress__list list-unstyled">
+                                                <li class="hw-progress__list-item">
+                                                    <a href="#" class="hw-progress__card hw-progress-card" data-percents="25">
+                                                        <div class="hw-progress-card__bar">
+                                                            <div class="circle-bar"></div>
+                                                            <svg>
+                                                                <path id="arc1"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="hw-progress-card__text-block">
+                                                            <div class="hw-progress-card__course-name">Data with Python</div>
+                                                            <div class="hw-progress-card__course-length">5 Lessons</div>
+                                                        </div>
+                                                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrow">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 14.7071C-0.0976311 14.3166 -0.0976312 13.6834 0.292893 13.2929L6.08579 7.5L0.292893 1.70711C-0.0976317 1.31658 -0.0976317 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L7.5 6.08579C8.28105 6.86684 8.28105 8.13317 7.5 8.91421L1.70711 14.7071C1.31658 15.0976 0.683418 15.0976 0.292893 14.7071Z" fill="#9DA6BA"/>
+                                                        </svg>
+                                                            
+                                                    </a>
+                                                </li>
+                                                <li class="hw-progress__list-item">
+                                                    <a href="#" class="hw-progress__card hw-progress-card" data-percents="50">
+                                                        <div class="hw-progress-card__bar">
+                                                            <div class="circle-bar"></div>
+                                                            <svg>
+                                                                <path id="arc2"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="hw-progress-card__text-block">
+                                                            <div class="hw-progress-card__course-name">Code Foundation</div>
+                                                            <div class="hw-progress-card__course-length">15 Lessons</div>
+                                                        </div>
+                                                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrow">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 14.7071C-0.0976311 14.3166 -0.0976312 13.6834 0.292893 13.2929L6.08579 7.5L0.292893 1.70711C-0.0976317 1.31658 -0.0976317 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L7.5 6.08579C8.28105 6.86684 8.28105 8.13317 7.5 8.91421L1.70711 14.7071C1.31658 15.0976 0.683418 15.0976 0.292893 14.7071Z" fill="#9DA6BA"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="hw-progress__list-item">
+                                                    <a href="#" class="hw-progress__card hw-progress-card" data-percents="30">
+                                                        <div class="hw-progress-card__bar">
+                                                            <div class="circle-bar"></div>
+                                                            <svg>
+                                                                <path id="arc3"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="hw-progress-card__text-block">
+                                                            <div class="hw-progress-card__course-name">Styling with CSS</div>
+                                                            <div class="hw-progress-card__course-length">13 Lessons</div>
+                                                        </div>
+                                                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrow">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 14.7071C-0.0976311 14.3166 -0.0976312 13.6834 0.292893 13.2929L6.08579 7.5L0.292893 1.70711C-0.0976317 1.31658 -0.0976317 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L7.5 6.08579C8.28105 6.86684 8.28105 8.13317 7.5 8.91421L1.70711 14.7071C1.31658 15.0976 0.683418 15.0976 0.292893 14.7071Z" fill="#9DA6BA"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li class="hw-progress__list-item">
+                                                    <a href="#" class="hw-progress__card hw-progress-card" data-percents="63">
+                                                        <div class="hw-progress-card__bar">
+                                                            <div class="circle-bar"></div>
+                                                            <svg>
+                                                                <path id="arc4"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="hw-progress-card__text-block">
+                                                            <div class="hw-progress-card__course-name">Code Foundation</div>
+                                                            <div class="hw-progress-card__course-length">15 Lessons</div>
+                                                        </div>
+                                                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrow">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 14.7071C-0.0976311 14.3166 -0.0976312 13.6834 0.292893 13.2929L6.08579 7.5L0.292893 1.70711C-0.0976317 1.31658 -0.0976317 0.683417 0.292893 0.292893C0.683417 -0.0976315 1.31658 -0.0976315 1.70711 0.292893L7.5 6.08579C8.28105 6.86684 8.28105 8.13317 7.5 8.91421L1.70711 14.7071C1.31658 15.0976 0.683418 15.0976 0.292893 14.7071Z" fill="#9DA6BA"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 col-sm-6">
+                                        <div class="todays section">
+                                            <h2 class="todays__heading">Today&#8216;s location</h2>
+                                            <ul class="todays__list list-unstyled">
+                                                <li class="todays__list-item todays-card">
+                                                    <div class="todays-card__icon"><img src="img/calendar.svg" alt="Calendar icon"></div>
+                                                    <div class="todays-card__text-block">
+                                                        <div class="todays-card__what">September 20th, 2020</div>
+                                                        <div class="todays-card__value">13:30-14:30</div>
+                                                    </div>
+                                                    <input type="checkbox" id="switch1"><label for="switch1">Toggle</label>                 
+                                                </li>
+                                                <li class="todays__list-item todays-card">
+                                                    <div class="todays-card__icon"><img src="img/location.svg" alt="Location icon"></div>
+                                                    <div class="todays-card__text-block">
+                                                        <div class="todays-card__what">Location</div>
+                                                        <div class="todays-card__value">San Francisco</div>
+                                                    </div>
+                                                    <input type="checkbox" id="switch2"><label for="switch2">Toggle</label>                 
+                                                </li>
+                                                <li class="todays__list-item todays-card">
+                                                    <div class="todays-card__icon"><img src="img/video.svg" alt="Video icon"></div>
+                                                    <div class="todays-card__text-block">
+                                                        <div class="todays-card__what">Accept video</div>
+                                                        <div class="todays-card__value">Everyone</div>
+                                                    </div>
+                                                    <input type="checkbox" id="switch3"><label for="switch3">Toggle</label>                 
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer col-12">
+                Design by <a href="https://www.figma.com/community/file/1107729468510587936/Free-Education-Courses-Figma-Template">Hussain Ahmed</a>
+                <br>
+                Development by <a href="https://github.com/jethro-cath">Ekaterina Pronina</a> 
+        </div>
+        </div>
+    </body>
+</html>
