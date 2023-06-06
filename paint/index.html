@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <title>Painting app</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/side-pannel.js" defer></script>
+    <script src="js/mobiles.js" defer></script>
+</head>
+<body>
+    <main>
+        <aside class="side-pannel">
+            <div class="side-pannel__content">
+                <div class="side-pannel__tabs mobiles_minimized">
+                    <button class="side-pannel__tab-title tab-title_active" data-tab="#canvas-settings">Холст</button>
+                    <button class="side-pannel__tab-title" data-tab="#colors-settings">Краски</button>
+                </div>
+
+                <div class="side-pannel__tab canvas side-pannel_active" id="canvas-settings">
+                    <div class="canvas__settings">
+                        <div class="canvas__setting-stuff">
+                            <div class="canvas__sliders mobiles_minimized">
+                                <div class="slider">
+                                    <input name="horizontal" id="horizontal" type="range" min="1" max="10" value="5">
+                                    <label for="horizontal">По горизонтали</label>
+                                    <div class="slider__markers">
+                                        <div class="slider__marker">1</div>
+                                        <div class="slider__marker">10</div>
+                                    </div>
+                                </div>
+
+                                <div class="slider">
+                                    <input name="vertical" id="vertical" type="range" min="1" max="10" value="5" >
+                                    <label for="horizontal">По вертикали</label>
+                                    <div class="slider__markers">
+                                        <div class="slider__marker">1</div>
+                                        <div class="slider__marker">10</div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="canvas__presets presets">
+                                <button class="presets__button" data-horizontal="5" data-vertical="5">5x5</button>
+                                <button class="presets__button" data-horizontal="5" data-vertical="10">5x10</button>
+                                <button class="presets__button" data-horizontal="10" data-vertical="10">10x10</button>
+                            </div>
+                        </div>
+                        
+                        <div class="canvas__confirm-data mobiles_minimized">
+                            <div class="canvas__current-size">Размер холста:</div>
+                            <div class="canvas__value">5х5</div>
+                            <!-- <button class="canvas__confirm-button">Готово</button> -->
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="side-pannel__tab colors" id="colors-settings">
+                    <div class="colors__settings">
+                        <button class="colors__preset" data-color="red"></button>
+                        <button class="colors__preset" data-color="orange"></button>
+                        <button class="colors__preset" data-color="yellow"></button>
+                        <button class="colors__preset" data-color="green"></button>
+                        <button class="colors__preset" data-color="blue"></button>
+                        <button class="colors__preset" data-color="brown"></button>
+                        <button class="colors__preset" data-color="black"></button>
+                    </div>
+                    <button class="eraser">
+                        <img src="img/eraser.svg" alt="Ластик" class="eraser__icon">
+                        <span class="eraser__text">Ластик</span> 
+                    </button>
+                </div>
+            </div>
+
+            <button class="side-pannel__open-button">
+                <img src="img/arrow.svg" alt="Стрелка" class="open-button__icon">
+            </button>
+            
+        </aside>
+
+        
+
+        <section class="painting-space">
+            <!-- <div class="line">
+                <div class="square"></div> 
+            </div> -->
+        </section>
+    </main>
+</body>
+</html>

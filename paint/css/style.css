@@ -1,0 +1,421 @@
+body {
+    background-color: #FCFCFF;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0F0E0E;
+
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+/* SIDE PANNEL STYLES */
+
+.side-pannel {
+    width: 30%;
+    /* min-width: 15rem; */
+
+    padding-top: 0.5rem;
+
+    /* box-shadow: 1px 0 1px #7577a1; */
+    display: flex;
+}
+
+.side-pannel__tabs {
+    display: flex;
+}
+
+.side-pannel__tab-title {
+    display: inline-block;
+
+    background-color: #D7D8EA;
+    padding: 0.5rem 0.75rem 0.25rem;
+
+    border: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    box-shadow: 2px 4px 4px #7577a1;
+    /* z-index: 2; */
+
+    margin-right: 0.5rem;
+
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.side-pannel__tab-title:first-child {
+    margin-left: 1.5rem;;
+}
+
+.side-pannel__tab {
+    padding: 2rem;
+
+    display: none;
+
+    height: 100%;
+
+    box-shadow: 2px 4px 4px #7577a1;
+}
+
+.side-pannel_active {
+    background-color: #AFB0D5;
+    
+    display: block;
+    
+    z-index: 100;
+    position: relative;
+}
+
+.tab-title_active {
+    background-color: #AFB0D5;
+}
+
+
+/* CANVAS SETTINGS STYLES */
+
+.canvas__setting-stuff {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 1rem;
+}
+
+.canvas__sliders {
+    display: grid;
+    gap: 0.725rem;
+
+    align-self: start;
+}
+
+.slider {
+    display: grid;
+    /* gap: 0.125rem; */
+}
+
+.slider label {
+    order: -1;
+
+    margin-bottom: 0.125rem;
+}
+
+.slider__markers {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-top: -0.25rem;
+}
+
+.slider__marker {
+    font-size: 14px;
+}
+
+.canvas__presets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
+    gap: 0.5rem;
+
+    align-self: start;
+}
+
+.presets__button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FCFCFF;
+
+    background-color: #797BB9;
+
+    border: 0;
+    border-radius: 0.25rem;
+
+    padding: 0.5rem 0.75rem;
+
+    box-shadow: 1px 1px 2px #4D5093;
+    
+    cursor: pointer;
+}
+
+.canvas__confirm-data {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: start;
+
+    margin-top: 1.5rem;
+
+    /* width: 50%; */
+}
+
+.canvas__value {
+    /* width: 4.5rem; */
+    /* height: 4.5rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px solid #4D5093; */
+    border-radius: 4px;
+
+    /* background-color: #FCFCFF; */
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.canvas__confirm-button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FCFCFF;
+
+    background-color: #60935D;
+
+    border: 0;
+    border-radius: 0.25rem;
+
+    padding: 0.5rem 0.75rem;
+
+    box-shadow: 1px 1px 2px #395738;
+}
+
+
+/* COLORS SETTINGS STYLES */
+
+.colors__settings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.colors__preset {
+    border: 2px #0F0E0E solid;
+    border-radius: 0.25rem;
+
+    height: 1.5rem;
+    width: 1.5rem;
+    
+    cursor: pointer;
+}
+
+.eraser {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0F0E0E;
+
+    background-color: #FCFCFF;
+
+    border: 0;
+    border-radius: 0.25rem;
+
+    padding: 0.25rem 0.5rem;
+
+    margin-top: 1.5rem;
+
+    box-shadow: 1px 1px 2px #4D5093;
+    
+    cursor: pointer;
+
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+
+}
+
+.eraser__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+
+/* CANVAS STYLES */
+
+.painting-space {
+    padding: 2.5rem 0 2.5rem 10rem;
+}
+
+.line {
+    display: flex;
+    gap: 0;
+}
+
+.square {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    background-color: white;
+
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.square:last-child {
+    border-right: 1px solid black;
+}
+
+.line:first-child .square {
+    border-top: 1px solid black;
+}
+
+
+
+/* STYLES FOR PHONES */
+
+.side-pannel__open-button {
+    background-color: #AFB0D5;
+    border: 0;
+    
+    margin-top: 2.1rem;
+    padding: 1.5rem 0.5rem;
+
+    height: 2rem;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 2px 4px 4px #7577a1;
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    z-index: 2;
+}
+
+.open-button__icon {
+    transition: 0.7s ease;
+}
+
+.open-button__icon_opened {
+    transform: rotate(180deg);
+    transition: 0.7s ease;
+}
+
+@media (max-width: 576px) {
+
+    .painting-space {
+        padding: 2.5rem;
+    }
+
+    .side-pannel__open-button {
+        display: flex;
+    }
+
+    .side-pannel {
+        padding: 0;
+        width: auto;
+
+        position: absolute;
+        height: 100vh;
+    }
+
+    .side-pannel__content {
+        width: 4rem;
+
+        transition: 0.7s ease;
+
+        z-index: 2;
+    }
+
+    .side-pannel__content_shown {
+        width: 12rem;
+
+        z-index: 0;
+
+        transition: 0.7s ease;
+    }
+
+    .side-pannel__tab-title {
+        z-index: 1;
+    }
+
+    .side-pannel__tab-title:first-child {
+        margin-left: 0.75rem;;
+    }
+
+    .side-pannel__tabs {
+        transition: 1s ease;
+    }
+
+    .side-pannel__tab {
+        padding: 0.5rem;
+        transition: 0.5s ease;
+    }
+
+    .side-pannel__tab_shown {
+        padding: 1rem;
+    }
+
+    .painting-space {
+        margin: 0 auto;
+    }
+
+    .mobiles_minimized {
+        display: none;
+    }
+
+    .canvas__presets {
+        grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));;
+    }
+
+    .presets__button {
+        padding: 0.725rem 0;
+
+        font-size: 14px;
+    }
+
+    .colors__settings {
+        justify-content: center;
+    }
+
+    .colors__settings_opened {
+        justify-content: flex-start;
+    }
+
+    .colors__preset {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .eraser {
+        margin: 1.5rem auto;
+        height: 2rem;
+        width: 2rem;
+
+        display: flex;
+        justify-content: center;
+
+        transition: 0.5s ease;
+    }
+
+    .eraser__opened {
+        margin: 1.5rem 0;
+
+        height: auto;
+        width: auto;
+
+        transition: 0.5s ease;
+    }
+
+    .eraser__minimized {
+        display: none;
+    }
+}
