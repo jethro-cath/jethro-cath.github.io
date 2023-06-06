@@ -6,7 +6,7 @@ let yValue = 5;
 let line = document.querySelector('.painting-space');
 let column = document.querySelector('.line');
 
-let currentColor = 'white';
+let currentColor = 'green';
 
 let colors = document.querySelectorAll('.colors__preset');
 
