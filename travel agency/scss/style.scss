@@ -1,0 +1,505 @@
+@import "resets.scss";
+
+/* Переменные по стайл-гайду */
+$titleFont: 'Playfair Display', serif;
+$textFont: 'Rubik', sans-serif;
+
+$prColor: #FF7757;
+$secColor: #331811;
+$textColor: #172432;
+$conColor: #FFFFFF;
+
+
+
+/* Стили основных компонентов */
+
+body {
+    background-color: $conColor;
+
+    color: $textColor;
+	font-family: $textFont;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 21px;	
+}
+
+.container {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    @media (max-width: 1152px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 16px;
+    }
+}
+
+/* Этот класс надет на элементы в блоке hero, чтобы правильно спозиционировать
+форму и не потерять адаптив. В остальных местах он надет на section, как и изначально
+было задумано*/
+
+.primary-button {
+    background-color: $prColor;
+
+    color: $conColor;
+    font-size: 20px;
+    line-height: 24px;
+
+    padding: 20px 32px;
+    border-radius: 12px;
+}
+
+.secondary-button {
+    color: $conColor;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.logo {
+    
+    &__img {
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* Делаю картинки адаптивными */
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+/* Стили странички */
+
+.first-screen {
+    position: relative;
+    overflow: hidden;
+
+    &__background-slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+    }
+}
+
+.background-slider {
+    padding: 0 0 58% 0;
+
+    &__img {
+        object-position: 50% 85%;
+        width: 100%;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+}
+
+
+.page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 142px;
+
+    @media (max-width: 1440px) {
+        margin-bottom: 72px;
+    }
+
+    @media (max-width: 1152px) {
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 24px 32px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        height: 45.6px;
+
+        @media (max-width: 768px) {
+            height: 27.5px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 32px;
+
+        @media (max-width: 1152px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        color: $conColor;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 1px;
+
+        &_active {
+            border-bottom: 3px solid $prColor;
+            font-weight: 500;
+        }
+    }
+
+    &__security-buttons {
+        display: flex;
+        gap: 36px;
+
+        @media (max-width: 1152px) {
+            display: none;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @media (max-width: 1152px) {
+            display: block;
+        }
+    }
+}
+
+
+
+.hero {
+    &__title {
+        font-family: $titleFont;
+        font-size: 84px;
+        font-weight: 400;
+        line-height: 1.33em;
+        color: $conColor;
+        margin-bottom: 16px;
+
+        @media (max-width: 1440px) {
+            font-size: 64px;
+        }
+        
+        @media (max-width: 1152px) {
+            font-size: 54px;
+        }
+        
+        @media (max-width: 768px) {
+            font-size: 40px;
+        } 
+    }
+
+    &__subtitle {
+        font-family: $textFont;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.185em;
+        color: $conColor;
+        margin-bottom: 170px;
+
+        @media (max-width: 1440px) {
+            margin-bottom: 140px;
+        }
+
+        @media (max-width: 1152px) {
+            margin-bottom: 100px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 1152px) {
+            font-size: 18px;
+        }
+    }
+
+    &__booking-form {
+        margin-bottom: 270px;
+
+        @media (max-width: 1440px) {
+            margin-bottom: 150px;
+        }
+
+        @media (max-width: 1152px) {
+            margin-bottom: 75px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.booking-form {
+    margin-left: 0;
+    background-color: $conColor;
+    border-radius: 0px 20px 20px 0px;
+
+        &__field {
+        }
+
+        &__input-label {
+        }
+
+        &__input {
+        }
+
+        &__button {
+        }
+}
+.popular-destinations {
+
+		&__title-block {
+		}
+
+		&__slider-arrows {
+		}
+
+		&__cards-block {
+		}
+}
+.block-title {
+}
+.block-subtitle {
+}
+.slider-arrows {
+}
+.left-arrow {
+}
+.right-arrow {
+}
+.destination-card {
+
+		&__img {
+		}
+
+		&__title {
+		}
+
+		&__location {
+		}
+}
+.special-offer {
+
+		&__slider-arrows {
+		}
+
+		&__title-block {
+		}
+
+		&__cards-block {
+		}
+}
+.special-offer-card {
+
+		&__img {
+		}
+
+		&__info-block {
+		}
+
+		&__title {
+		}
+
+		&__stars {
+		}
+
+		&__description {
+		}
+
+		&__price-block {
+		}
+
+		&__additional-text {
+		}
+
+		&__price {
+		}
+
+		&__link {
+		}
+}
+.star {
+}
+.blog {
+
+		&__title-block {
+		}
+
+		&__content-block {
+		}
+
+		&__post-img {
+		}
+
+		&__text-block {
+		}
+
+		&__post-title {
+		}
+
+		&__post-text {
+		}
+
+		&__button {
+		}
+}
+.link-button {
+}
+.trip-planners {
+
+		&__title-block {
+		}
+
+		&__subtitle {
+		}
+
+		&__button {
+		}
+
+		&__cards-block {
+		}
+}
+.special-button {
+}
+.trip-planners-card {
+
+		&__img {
+		}
+
+		&__tour-type {
+		}
+
+		&__tour-price {
+		}
+
+		&__tour-name {
+		}
+
+		&__stars {
+		}
+
+		&__tour-length {
+		}
+}
+.gallery {
+
+		&__title-block {
+		}
+
+		&__slider-arrows {
+		}
+
+		&__photo-block {
+		}
+
+		&__img {
+		}
+}
+.feedback {
+
+		&__title-block {
+		}
+
+		&__feedbacks-block {
+		}
+}
+.feedback-card {
+
+		&__img {
+		}
+
+		&__client-says {
+		}
+
+		&__client-name {
+		}
+
+		&__client-profession {
+		}
+}
+.subscribe {
+
+		&__title {
+		}
+
+		&__form {
+		}
+}
+.subscribe-form {
+
+		&__field {
+		}
+
+		&__email-label {
+		}
+
+		&__email {
+		}
+
+		&__button {
+		}
+}
+.page-footer {
+
+		&__copyright-and-policy-stuff {
+		}
+
+		&__logo {
+		}
+
+		&__copyright {
+		}
+
+		&__info-block {
+		}
+
+		&__info-block-title {
+		}
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__link {
+		}
+
+		&__socials-list {
+		}
+
+		&__socials-item {
+		}
+
+		&__socials-link {
+		}
+}
+.socials-logo {
+}
