@@ -257,9 +257,26 @@ body {
 }
 
 .booking-form {
-    margin-left: 0;
     background-color: $conColor;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        margin-left: 0;
+        background-color: $conColor;
+        position: absolute;
+        left: -250px;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -2;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 
         &__field {
         }

@@ -322,7 +322,24 @@ body {
 }
 
 .booking-form {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block;
+}
+.booking-form::before {
+  content: "";
   margin-left: 0;
   background-color: #FFFFFF;
-  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  left: -250px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+@media (max-width: 768px) {
+  .booking-form::before {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
