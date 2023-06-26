@@ -246,6 +246,24 @@ body {
         height: 100%;
         z-index: -100;
     }
+
+    &__slider-change-pannel {
+        position: absolute;
+        right: 80px;
+        top: calc(50% - 114px);
+
+        @media (max-width: 1439px) {
+            right: 32px;
+        }
+
+        @media (max-width: 1151px) {
+            right: 20px;
+        }
+    
+        @media (max-width: 767px) {
+            display: none !important;
+        }
+    }
 }
 
 .background-slider {
@@ -259,6 +277,41 @@ body {
     &:after {
         @extend %img-effect;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    }
+}
+
+.slider-change-pannel {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__circle-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__circle {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $conColor;
+        cursor: pointer;
+
+        &_active {
+            background-color: $prColor;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    &__arrow {
+        width: 14px;
+        cursor: pointer;
     }
 }
 
@@ -464,55 +517,6 @@ body {
         @media (max-width: 767px) {
             margin-bottom: 100px;
         }
-    }
-
-    &__slider-change-pannel {
-        position: absolute;
-        right: 32px;
-        top: calc(50% - 114px);
-
-        @media (max-width: 1151px) {
-            right: 20px;
-        }
-    
-        @media (max-width: 767px) {
-            display: none !important;
-        }
-    }
-}
-
-.slider-change-pannel {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    &__circle-list {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-
-    &__circle {
-        height: 16px;
-        width: 16px;
-        border-radius: 50%;
-        background-color: $conColor;
-        cursor: pointer;
-
-        &_active {
-            background-color: $prColor;
-        }
-    }
-
-    &__arrows {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    &__arrow {
-        width: 14px;
-        cursor: pointer;
     }
 }
 
@@ -1381,6 +1385,7 @@ body {
         margin-right: 20px;
         top: auto;
         margin-top: 80px;
+        margin-bottom: 80px;
         display: flex;
         flex-wrap: wrap;
     }

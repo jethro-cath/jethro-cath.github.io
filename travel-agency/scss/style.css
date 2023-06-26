@@ -321,6 +321,26 @@ body {
   height: 100%;
   z-index: -100;
 }
+.first-screen__slider-change-pannel {
+  position: absolute;
+  right: 80px;
+  top: calc(50% - 114px);
+}
+@media (max-width: 1439px) {
+  .first-screen__slider-change-pannel {
+    right: 32px;
+  }
+}
+@media (max-width: 1151px) {
+  .first-screen__slider-change-pannel {
+    right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .first-screen__slider-change-pannel {
+    display: none !important;
+  }
+}
 
 .background-slider {
   padding: 0 0 58% 0;
@@ -332,6 +352,36 @@ body {
 }
 .background-slider:after {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.slider-change-pannel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.slider-change-pannel__circle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.slider-change-pannel__circle {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.slider-change-pannel__circle_active {
+  background-color: #FF7757;
+}
+.slider-change-pannel__arrows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.slider-change-pannel__arrow {
+  width: 14px;
+  cursor: pointer;
 }
 
 .page-header {
@@ -538,51 +588,6 @@ body {
   .hero__booking-form {
     margin-bottom: 100px;
   }
-}
-.hero__slider-change-pannel {
-  position: absolute;
-  right: 32px;
-  top: calc(50% - 114px);
-}
-@media (max-width: 1151px) {
-  .hero__slider-change-pannel {
-    right: 20px;
-  }
-}
-@media (max-width: 767px) {
-  .hero__slider-change-pannel {
-    display: none !important;
-  }
-}
-
-.slider-change-pannel {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.slider-change-pannel__circle-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.slider-change-pannel__circle {
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  cursor: pointer;
-}
-.slider-change-pannel__circle_active {
-  background-color: #FF7757;
-}
-.slider-change-pannel__arrows {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.slider-change-pannel__arrow {
-  width: 14px;
-  cursor: pointer;
 }
 
 .booking-form {
@@ -1404,6 +1409,7 @@ body {
     margin-right: 20px;
     top: auto;
     margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
   }
