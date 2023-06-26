@@ -393,6 +393,16 @@ body {
     }
 }
 
+.hero_when-burger-opened {
+    @media (max-width: 1151px) {
+        margin-top: 214px;
+    }
+    
+    @media (max-width: 767px) {
+        margin-top: 198px;
+    } 
+    
+}
 
 .hero {
     position: relative;

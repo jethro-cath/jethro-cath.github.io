@@ -460,6 +460,17 @@ body {
   order: 2;
 }
 
+@media (max-width: 1151px) {
+  .hero_when-burger-opened {
+    margin-top: 214px;
+  }
+}
+@media (max-width: 767px) {
+  .hero_when-burger-opened {
+    margin-top: 198px;
+  }
+}
+
 .hero {
   position: relative;
 }
