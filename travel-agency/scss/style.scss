@@ -1152,6 +1152,7 @@ body {
 
 		&__tour-type {
             font-family: $textFont;
+            color: $textColor;
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
@@ -1163,6 +1164,7 @@ body {
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
+            color: $textColor;
 		}
 
 		&__tour-name {
@@ -1171,6 +1173,7 @@ body {
             font-weight: 600;
             font-size: 28px;
             line-height: 37px;
+            color: $textColor;
 		}
 
 		&__tour-length {
@@ -1178,6 +1181,7 @@ body {
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
+            color: $textColor;
 		}
 }
 .gallery {

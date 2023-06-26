@@ -1186,6 +1186,7 @@ body {
 }
 .trip-planners-card__tour-type {
   font-family: "Rubik", sans-serif;
+  color: #172432;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1196,6 +1197,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #172432;
 }
 .trip-planners-card__tour-name {
   width: 100%;
@@ -1203,12 +1205,14 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 37px;
+  color: #172432;
 }
 .trip-planners-card__tour-length {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  color: #172432;
 }
 
 .gallery__title-block {
