@@ -330,8 +330,68 @@ body {
             display: block;
         }
     }
+
+    &__close {
+        display: none;
+    }
 }
 
+.page-header-mobile {
+    background-color: $conColor;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    animation: clip 1s ease-out;
+    @keyframes clip {
+        from { clip: rect(auto, auto, 0, auto); }   
+        to { clip: rect(auto, auto, 550px, auto); }  
+    }
+
+    .logo__img {
+        order: 1;
+        path {
+            fill: $textColor;
+        }
+    }
+
+    .page-header__menu {
+        display: flex;
+        flex-direction: column;
+        order: 3;
+        width: 100%;
+
+        .page-header__link {
+            color: $textColor;
+        }
+    }
+
+    .page-header__security-buttons {
+        display: flex;
+        flex-direction: column;
+        order: 4;
+        width: 100%;
+
+        .secondary-button {
+            color: $textColor;
+        }
+    }
+
+    .page-header__burger {
+        display: none;
+    }
+
+    .page-header__close {
+        display: block;
+        order: 2;
+    }
+}
 
 
 .hero {
