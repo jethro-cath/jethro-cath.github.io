@@ -18,11 +18,11 @@ closeButton.onclick = function() {
 
 
 
+// Второй экран
 
-const swiper = new Swiper('.popular-destinations.swiper', {
+const swiperDestinations = new Swiper('.popular-destinations.swiper', {
     slidesPerView: 1,
-    rewind: true,
-    // loop: true,
+    loop: true,
     // loopedSlides: 6,
     spaceBetween: 32,
     // centeredSlides: true,
@@ -38,13 +38,97 @@ const swiper = new Swiper('.popular-destinations.swiper', {
     breakpoints: {
         1441: {
             slidesPerView: 3,
+            rewind: true,
+            loop: false,
         },
         1152: {
             slidesPerView: 2.5,
+            rewind: true,
+            loop: false,
         },
-        // 1024: {
-        //     slidesPerView: 2.1,
-        // }
+    },
+  
+});
+
+
+
+// Третий экран
+const swiperSpecialOffer = new Swiper('.special-offer.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    // loopedSlides: 6,
+    spaceBetween: 32,
+    // centeredSlides: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.special-offer__slider-arrows .right-arrow',
+      prevEl: '.special-offer__slider-arrows .left-arrow',
+
+      enabled: true,
+    },
+
+    breakpoints: {
+        1152: {
+            slidesPerView: 3,
+            rewind: true,
+            loop: false,
+        },
+    },
+  
+});
+
+
+
+// Галерея
+const swiperGallery = new Swiper('.gallery.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    // loopedSlides: 6,
+    spaceBetween: 32,
+    // centeredSlides: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.gallery__slider-arrows .right-arrow',
+      prevEl: '.gallery__slider-arrows .left-arrow',
+
+      enabled: true,
+    },
+
+    breakpoints: {
+        1152: {
+            slidesPerView: 4,
+            rewind: true,
+            loop: false,
+        },
+    },
+  
+});
+
+
+// Отзывы
+const swiperFeedback = new Swiper('.feedback.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    // loopedSlides: 6,
+    spaceBetween: 32,
+    // centeredSlides: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.feedback__slider-arrows .right-arrow',
+      prevEl: '.feedback__slider-arrows .left-arrow',
+
+      enabled: true,
+    },
+
+    breakpoints: {
+        1152: {
+            slidesPerView: 2.5,
+            rewind: true,
+            loop: false,
+        },
     },
   
 });
