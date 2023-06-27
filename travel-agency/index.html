@@ -12,6 +12,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Playfair+Display:wght@400;600&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
 
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
         <link href="scss/style.css" rel="stylesheet">
 
         <script src="js/service.js" async defer></script>
@@ -118,7 +125,7 @@
 
 
 
-        <section class="popular-destinations container">
+        <section class="popular-destinations container swiper">
             <div class="popular-destinations__title-block">
                 <h2 class="block-title">Popular Destinations</h2>
                 <div class="block-subtitle">Most popular destinations around the world, from historical places to&nbsp;natural&nbsp;wonders</div>
@@ -133,8 +140,8 @@
                 </button>
             </div>
 
-            <div class="popular-destinations__cards-block">
-                <a href="#" class="destination-card">
+            <div class="popular-destinations__cards-block swiper-wrapper">
+                <a href="#" class="destination-card swiper-slide">
                     <div class="destination-card__img img-container">
                         <img src="img/popular-destinations/monument-berlin.webp" alt="Monument of Berlin" class="img">
                     </div>
@@ -142,7 +149,7 @@
                     <div class="destination-card__location">Berlin, Germany</div>
                 </a>
 
-                <a href="#" class="destination-card">
+                <a href="#" class="destination-card swiper-slide">
                     <div class="destination-card__img img-container">
                         <img src="img/popular-destinations/millenium.jpg" alt="Millennium Bridge" class="img">
                     </div>
@@ -150,7 +157,7 @@
                     <div class="destination-card__location">London, United Kingdom</div>
                 </a>
 
-                <a href="#" class="destination-card">
+                <a href="#" class="destination-card swiper-slide">
                     <div class="destination-card__img img-container">
                         <img src="img/popular-destinations/rialto.jpg" alt="Rialto Bridge" class="img">
                     </div>
@@ -158,7 +165,7 @@
                     <div class="destination-card__location">Venice, Italy</div>
                 </a>
 
-                <a href="#" class="destination-card">
+                <a href="#" class="destination-card swiper-slide">
                     <div class="destination-card__img img-container">
                         <img src="img/popular-destinations/sea-of-orange.jpg" alt="Sea of Orange Tiles" class="img">
                     </div>

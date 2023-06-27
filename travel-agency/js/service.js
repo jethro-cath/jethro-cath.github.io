@@ -15,17 +15,36 @@ closeButton.onclick = function() {
     hero.classList.remove('hero_when-burger-opened');
 };
 
-// let bookingForm = document.querySelector('.hero__booking-form');
-// let container = getComputedStyle(document.querySelector('.hero__title'));
-// let padding = 0;
 
-// function paddingChanger() {
-//     let num1 = container.marginLeft;
-//     console.log(num1);
-//     let num2 = container.paddingLeft;
-//     padding = parseInt(num1) + parseInt(num2);
-//     bookingForm.style.paddingLeft = padding + 'px';
-// }
 
-// paddingChanger();
-// window.addEventListener("resize", paddingChanger);
+
+
+const swiper = new Swiper('.popular-destinations.swiper', {
+    slidesPerView: 1,
+    rewind: true,
+    // loop: true,
+    // loopedSlides: 6,
+    spaceBetween: 32,
+    // centeredSlides: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.popular-destinations__slider-arrows .right-arrow',
+      prevEl: '.popular-destinations__slider-arrows .left-arrow',
+
+      enabled: true,
+    },
+
+    breakpoints: {
+        1441: {
+            slidesPerView: 3,
+        },
+        1152: {
+            slidesPerView: 2.5,
+        },
+        // 1024: {
+        //     slidesPerView: 2.1,
+        // }
+    },
+  
+});
