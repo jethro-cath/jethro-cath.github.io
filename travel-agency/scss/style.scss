@@ -237,14 +237,18 @@ body {
 .first-screen {
     position: relative;
     overflow: hidden;
+    width: 100%;
+
+    &____background-slider-wrapper {
+    }
 
     &__background-slider {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -100;
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        // width: 100%;
+        // height: 100%;
+        
     }
 
     &__slider-change-pannel {
@@ -266,6 +270,14 @@ body {
     }
 }
 
+.big-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .background-slider {
     padding: 0 0 58% 0;
 
@@ -284,14 +296,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    z-index: 5;
 
-    &__circle-list {
+    &__bullet-list {
         display: flex;
         flex-direction: column;
         gap: 24px;
     }
 
-    &__circle {
+    &__bullet {
         height: 16px;
         width: 16px;
         border-radius: 50%;
@@ -320,6 +333,8 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     margin-bottom: 142px;
+    position: relative;
+    z-index: 2;
 
     @media (max-width: 1439px) {
         margin-bottom: 72px;
@@ -459,6 +474,7 @@ body {
 
 .hero {
     position: relative;
+    z-index: 2;
 
     &__title {
         font-family: $titleFont;

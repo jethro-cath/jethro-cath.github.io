@@ -26,21 +26,29 @@
 
     <body>
         <div class="first-screen">
-            <div class="first-screen__background-slider background-slider img-container">
-                <img src="img/first-screen/Hallstatt.jpg" alt="Hallstatt" class="background-slider__img img">
+            <div class="big-wrapper swiper">
+                <div class="first-screen__background-slider-wrapper swiper-wrapper">
+                    <div class="first-screen__background-slider background-slider img-container swiper-slide">
+                        <img src="img/first-screen/Hallstatt.jpg" alt="Hallstatt" class="background-slider__img img">
+                    </div>
+                    <div class="first-screen__background-slider background-slider img-container swiper-slide">
+                        <img src="img/first-screen/Rome.jpg" alt="Rome" class="background-slider__img img">
+                    </div>
+                    <div class="first-screen__background-slider background-slider img-container swiper-slide">
+                        <img src="img/first-screen/Vienna.webp" alt="Vienna" class="background-slider__img img">
+                    </div>
+                </div>
             </div>
 
             <div class="first-screen__slider-change-pannel slider-change-pannel">
-                <ul class="slider-change-pannel__circle-list">
-                    <li class="slider-change-pannel__circle slider-change-pannel__circle_active"></li>
-                    <li class="slider-change-pannel__circle"></li>
-                    <li class="slider-change-pannel__circle"></li>
-                    <li class="slider-change-pannel__circle"></li>
-                    <li class="slider-change-pannel__circle"></li>
+                <ul class="slider-change-pannel__bullet-list">
+                    <!-- <li class="slider-change-pannel__bullet"></li>
+                    <li class="slider-change-pannel__bullet"></li>
+                    <li class="slider-change-pannel__bullet"></li> -->
                 </ul>
                 <div class="slider-change-pannel__arrows">
-                    <img src="img/service/slide-up.svg" alt="Slide up arrow" class="slider-change-pannel__arrow">
-                    <img src="img/service/slide-down.svg" alt="Slide down arrow" class="slider-change-pannel__arrow">
+                    <img src="img/service/slide-up.svg" alt="Slide up arrow" class="slider-change-pannel__arrow bg-up">
+                    <img src="img/service/slide-down.svg" alt="Slide down arrow" class="slider-change-pannel__arrow bg-down">
                 </div>
             </div>
 

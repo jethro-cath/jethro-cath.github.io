@@ -16,6 +16,30 @@ closeButton.onclick = function() {
 };
 
 
+// Первый экран
+
+const backgroundSwiper = new Swiper('.first-screen .swiper', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    // loop: true,
+    rewind: true,
+    // height: window.innerHeight,
+  
+    // If we need pagination
+    pagination: {
+      el: '.slider-change-pannel__bullet-list',
+      bulletElement: 'li',
+      bulletClass: 'slider-change-pannel__bullet',
+      bulletActiveClass: 'slider-change-pannel__bullet_active',
+      clickable: true,
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.bg-down',
+      prevEl: '.bg-up',
+    },
+  });
 
 
 // Второй экран
