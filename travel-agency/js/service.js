@@ -21,8 +21,8 @@ closeButton.onclick = function() {
 const backgroundSwiper = new Swiper('.first-screen .swiper', {
     direction: 'vertical',
     slidesPerView: 1,
-    // loop: true,
-    rewind: true,
+    loop: true,
+    // rewind: true,
     // height: window.innerHeight,
   
     // If we need pagination
@@ -156,3 +156,23 @@ const swiperFeedback = new Swiper('.feedback.swiper', {
     },
   
 });
+
+
+// Выбор даты
+
+flatpickr("#check-in", {
+    altInput: true,
+    altFormat: "D, J F Y",
+    dateFormat: "Y-m-d",
+    minDate: "today",
+    defaultDate: "today",
+});
+flatpickr("#check-out", {
+    altInput: true,
+    altFormat: "D, J F Y",
+    dateFormat: "Y-m-d",
+    minDate: new Date().fp_incr(14),
+    defaultDate: new Date().fp_incr(14),
+});
+
+require("flatpickr/dist/themes/material_orange.css");

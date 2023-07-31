@@ -1514,6 +1514,10 @@ footer {
   font-size: 14px;
   line-height: 17px;
 }
+.page-footer__copyright a {
+  color: inherit;
+  text-decoration: underline;
+}
 .page-footer__info-block {
   display: flex;
   flex-direction: column;

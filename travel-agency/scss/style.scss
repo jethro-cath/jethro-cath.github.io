@@ -1550,7 +1550,12 @@ footer {
             font-family: $textFont;
             font-size: 14px;
             line-height: 17px;
-		}
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
 
 		&__info-block {
             display: flex;
@@ -1589,3 +1594,4 @@ footer {
             height: 40px;
 		}
 }
+
